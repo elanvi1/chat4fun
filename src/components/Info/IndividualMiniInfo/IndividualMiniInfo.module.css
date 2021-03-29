@@ -1,0 +1,55 @@
+.LastMessage{
+  /* text-overflow: ellipsis;  */
+  font-size: 0.8rem;
+  white-space: nowrap;
+  align-items: center;
+  transition: white-space 1s ease-in-out;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.Wrap{
+  white-space: inherit;
+  max-width: 90%;
+}
+
+.IndividualMiniInfo{
+  cursor:pointer;
+  position: relative;
+}
+
+.Selected {
+  color:#fff;
+  background-color: #1b1e21;
+  border-color: #1b1e21;
+}
+
+
+.Loading{
+  height: 5rem;
+  min-height: 5rem;
+  justify-content:center;
+}
+
+.Date{
+  font-size: 0.75rem;
+  position: absolute;
+  right:5px;
+}
+
+.Dropdown{
+  position:absolute;
+  bottom:0px;
+  right: 8px;
+}
+
+.Badge{
+  position:absolute;
+  bottom:10px;
+  right: 22px;
+}
+
+.AcceptOrReject:hover{
+  font-weight: 800!important;
+}
+

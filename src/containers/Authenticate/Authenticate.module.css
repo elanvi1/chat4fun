@@ -1,0 +1,8 @@
+.Authenticate{
+  padding: 2% 20%;
+}
+
+.ChangeAuthType{
+  cursor: pointer;
+  color:lightblue;
+}

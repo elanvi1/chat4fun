@@ -1,0 +1,134 @@
+.Main{
+  /* position:absolute;
+  top: 3%;
+  bottom: 3%; */
+  margin: auto;
+  height: 94vh;
+  max-height: 94vh;
+  margin-top: 3vh;
+  /* width: 85%; */
+  background: lightblue;
+  /* overflow: hidden; */
+}
+
+.InfoColumn{
+  min-height: 100%;
+  height: 94vh;
+  max-height: 94vh;
+  min-width:324px;
+  overflow: hidden;
+  position: relative;
+}
+
+.MakeAbsolute{
+  position: absolute;
+  left:0;
+  top:0;
+  right:0;
+}
+
+.MakeAbsolute2{
+  position: absolute;
+  top:0;
+  right:0;
+}
+
+.MessagesInfo{
+  background: url('../../assets/whatsapp.jpg');
+}
+
+.OpenSecondary{
+  animation: openSecondary 0.1s linear forwards;
+}
+
+.CloseSecondary{
+  animation: closeSecondary 0.1s linear forwards;
+}
+
+@keyframes openSecondary {
+  0% {
+    transform: translateX(-100%);
+    z-index: 3;
+  }
+  50%{
+    transform: translateX(-50%);
+    z-index: 3;
+  }
+  100%{
+    transform: translateX(0);
+    z-index: 3;
+  }
+}
+
+@keyframes closeSecondary {
+  0% {
+    z-index: 3;
+    transform: translateX(0);
+  }
+  50%{
+    z-index: 3;
+    transform: translateX(-50%);
+  }
+  100%{
+    z-index: 3;
+    transform: translateX(-100%);
+  }
+}
+
+.OpenMessagesInfo{
+  animation: openMessagesInfo 0.1s linear forwards;
+}
+
+.CloseMessagesInfo{
+  animation: closeMessagesInfo 0.1s linear forwards;
+}
+
+@keyframes openMessagesInfo {
+  0% {
+    transform: translateX(100%);
+    z-index: 3;
+  }
+  50%{
+    transform: translateX(50%);
+    z-index: 3;
+  }
+  100%{
+    transform: translateX(0);
+    z-index: 3;
+  }
+}
+
+@keyframes closeMessagesInfo {
+  0% {
+    z-index: 3;
+    transform: translateX(0);
+  }
+  50%{
+    z-index: 3;
+    transform: translateX(50%);
+  }
+  100%{
+    z-index: 3;
+    transform: translateX(100%);
+  }
+}
+
+@media (max-width: 1199px){
+  .Main{
+    height:100vh;
+    max-height: 100vh;
+    margin-top:0;
+    width:100%;
+    max-width: 100%;
+    /* left: 0;
+    top: 0;
+    bottom: 0; */
+    
+  }
+
+  .InfoColumn{
+    min-height: 100%;
+    height: 100vh;
+    max-height: 100vh;
+  }
+}

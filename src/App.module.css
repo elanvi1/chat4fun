@@ -1,0 +1,27 @@
+.Block1{
+  position: fixed;
+  left:0;
+  top:0;
+  height:25vh;
+  width:100%;
+  background: rgb(61, 109, 99);
+  z-index: -500;
+}
+
+.Block2{
+  position: fixed;
+  left:0;
+  top:25vh;
+  bottom:0;
+  width:100%;
+  background: rgb(187, 198, 218);
+  z-index: -500;
+}
+
+.MessageAndError{
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  z-index: 2000;
+}

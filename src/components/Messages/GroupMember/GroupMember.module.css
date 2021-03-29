@@ -1,0 +1,19 @@
+.About{
+  /* text-overflow: ellipsis;  */
+  font-size: 0.9rem;
+  /* white-space: nowrap; */
+  align-items: center;
+  text-align: justify;
+  text-justify: inter-word;
+  line-height: 100%;
+}
+
+.Pointer{
+  cursor: pointer;
+}
+
+.Permission{
+  position: absolute;
+  top:5px;
+  right:5px;
+}

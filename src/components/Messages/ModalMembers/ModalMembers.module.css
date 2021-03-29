@@ -1,0 +1,24 @@
+.Modal{
+  /* min-height:96%; */
+  height:95vh;
+  max-height: 100%;
+  min-width: 324px;
+  overflow-y: hidden;
+}
+
+.Loading{
+  height: 20rem;
+  min-height: 20rem;
+  display:flex;
+  justify-content:center;
+  align-items: center;
+}
+
+.ListItems{
+  overflow-y: auto;
+  overflow-x: hidden;
+  scrollbar-width: thin;
+  scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+  flex-wrap:nowrap; 
+  flex:1 1 auto;
+}

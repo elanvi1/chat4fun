@@ -1,0 +1,13 @@
+.FirstShow{
+  background: rgb(229, 232, 233);
+  min-width:324px;
+  height: 94vh;
+  max-height: 94vh;
+}
+
+@media (max-width: 1199px){
+  .FirstShow{
+    height: 100vh;
+    max-height: 100vh;
+  }
+}

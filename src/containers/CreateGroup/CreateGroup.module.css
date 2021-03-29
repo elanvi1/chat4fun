@@ -1,0 +1,45 @@
+.CreateGroup{
+  position: absolute;
+  left:0;
+  top:0;
+  right:0;
+  min-width:324px;
+  height: 94vh;
+  max-height: 94vh;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+  flex-wrap:nowrap;
+  background: rgb(214, 206, 206);
+}
+
+
+.Header{
+  display: flex;
+  background-color: rgb(127, 163, 156);
+  font-size:2rem;
+  padding:1.5rem;
+}
+
+.BackArrow{
+  cursor:pointer;
+  color:white;
+  align-self: center;
+}
+
+.Loading{
+  height: 20rem;
+  min-height: 20rem;
+  display:flex;
+  justify-content:center;
+  align-items: center;
+}
+
+@media (max-width: 1199px){
+  .CreateGroup{
+    height: 100vh;
+    max-height: 100vh;
+  }
+}

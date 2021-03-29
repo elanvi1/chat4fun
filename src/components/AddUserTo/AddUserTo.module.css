@@ -1,0 +1,22 @@
+.AddUserTo{
+  align-items: center;
+}
+
+.About{
+  /* text-overflow: ellipsis;  */
+  font-size: 0.9rem;
+  /* white-space: nowrap; */
+  align-items: center;
+  text-align: justify;
+  text-justify: inter-word;
+  line-height: 100%;
+}
+
+.AddSign{
+  cursor:pointer;
+}
+
+.AddSign:hover{
+  font-weight: 400;
+}
+

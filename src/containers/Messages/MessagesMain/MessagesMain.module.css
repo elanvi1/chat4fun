@@ -1,0 +1,122 @@
+.MessagesMain{
+  min-width:324px;
+  height: 94vh;
+  max-height: 94vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+ 
+}
+
+.HeaderMessagesMain{
+  background: rgb(162, 177, 182);
+  
+}
+
+.Name{
+  font-size: 0.95rem;
+}
+
+.UnderText{
+  font-size: 0.7rem;
+}
+
+.BackArrow{
+  cursor:pointer;
+  color:white;
+  font-size:1.5rem;
+}
+
+.Pointer{
+  cursor:pointer;
+}
+
+.StatusHeader{
+  text-transform: capitalize;
+}
+
+.OpenStatus{
+  animation: openStatus 0.1s linear forwards;
+}
+
+.CloseStatus{
+  animation: closeStatus 0.1s linear forwards;
+}
+
+.Body{
+  overflow: hidden;
+  background: url('../../../assets/whatsapp.jpg');
+  flex: 1 1 auto;
+}
+
+.Messages{
+  display: flex;
+  flex-direction: column-reverse;
+  /* justify-content: flex-end; */
+  flex-wrap: nowrap;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+  flex:1 1 auto;
+  /* background: inherit; */
+  padding: 1rem 8%;
+}
+
+.Footer{
+  background: rgb(162, 177, 182);
+}
+
+.SendMsgInput{
+  border-top-left-radius:1rem!important;
+  border-bottom-left-radius: 1rem!important;
+  resize: none;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+}
+
+.SendMsgInput:focus{
+  border:1px solid #ccc!important;
+  box-shadow: none!important;
+  outline: none!important;
+}
+
+.SendSign{
+  border-top-right-radius: 1rem!important;
+  border-bottom-right-radius: 1rem!important;
+}
+
+/* .Messages > :first-child{
+  margin-top:auto!important;
+} */
+
+@keyframes openStatus {
+  0% {
+    transform: translateY(-100%);
+  }
+  50%{
+    transform: translateY(-50%);
+  }
+  100%{
+    transform: translateY(0);
+  }
+}
+
+@keyframes closeStatus {
+  0% {
+    transform: translateY(0);
+  }
+  50%{
+    transform: translateY(-50%);
+  }
+  100%{
+    transform: translateY(-100%);
+  }
+}
+
+@media (max-width: 1199px){
+  .MessagesMain{
+    height: 100vh;
+    max-height: 100vh;
+  }
+}

@@ -1,0 +1,44 @@
+.InfoUser{
+  position: absolute;
+  left:0;
+  top:0;
+  right:0;
+  min-width:324px;
+  height: 94vh;
+  max-height: 94vh;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+  flex-wrap:nowrap;
+  background: rgb(214, 206, 206);
+}
+
+.Header{
+  display: flex;
+  background-color: rgb(127, 163, 156);
+  font-size:2rem;
+  padding:1.5rem;
+}
+
+.BackArrow{
+  align-self: center;
+  cursor:pointer;
+  color:white;
+}
+
+.ImageDiv{
+  height:200px;
+  min-height: 200px;
+  width:200px;
+  min-width: 200px;
+  margin: 1rem auto;
+}
+
+@media (max-width: 1199px){
+  .InfoUser{
+    height: 100vh;
+    max-height: 100vh;
+  }
+}

@@ -1,0 +1,98 @@
+.InfoMain{
+  position: absolute;
+  left:0;
+  top:0;
+  right:0;
+  min-width:324px;
+  height: 94vh;
+  max-height: 94vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.HeaderInfoMain{
+  background: rgb(162, 177, 182);
+  border-right: 1px dotted white;
+  /* height: 8.30%;
+  max-height: 8.30%;
+  min-height: 8.30%; */
+  /* flex: 8.3 8.3 8.3%; */
+  /* position:absolute;
+  left:0;
+  top: 0;
+  min-height: 4%;
+  width:100%;
+  z-index: 1; */
+}
+
+.Options{
+  /* height: 5.55%;
+  max-height: 5.55%;
+  min-height: 5.55%; */
+  /* flex: 5.55 5.55 5.55%; */
+  /* position:absolute;
+  left:0;
+  top: 72px;
+  min-height: 3%;
+  width:100%;
+  z-index: 1; */
+}
+
+.Category{
+  border-radius: 0;
+}
+
+.SearchBar{
+  /* height: 7%;
+  max-height: 7%;
+  min-height: 7%; */
+  /* flex: 7 7 7%; */
+  /* position:absolute;
+  left:0;
+  top: 121.533334px;
+  min-height: 2%;
+  width:100%;
+  z-index: 1; */
+}
+
+.ListItems{
+  overflow-y: auto;
+  overflow-x: hidden;
+  scrollbar-width: thin;
+  scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+  flex-wrap:nowrap;
+  flex:1 1 auto;
+  /* height: 79.15%; */
+  /* flex: 79.15 79.15 79.15%; */
+  /* height: 81.85%; */
+  /* position:absolute;
+  left:0;
+  top: 159.533368px;
+  width:100%;
+  z-index: 1; */
+}
+
+.InfoAddIcons{
+  cursor:pointer
+}
+
+.DropDownAddition{
+  position: absolute;
+  left:0;
+  top:0;
+  display:block;
+  transform: translate(-130.833px, 35.8333px);
+}
+
+.Badge{
+  position:absolute;
+  top:-5px;
+  left: 3px;
+}
+
+@media (max-width: 1199px){
+  .InfoMain{
+    height: 100vh;
+    max-height: 100vh;
+  }
+}
