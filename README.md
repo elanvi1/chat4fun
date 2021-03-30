@@ -1,70 +1,35 @@
-# Getting Started with Create React App
+# Composition
+As you enter the app there are there are 2 columns: Info(left) and Messages(right)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Info 
+In the upper right of the info column there are three icons:
+## Plus Icon which opens the addition menu from where you can select the view where you can add a user/send a friendship request or create a group
+## User Edit Icon from which select the view where you can edit information about the account
+## Log out Icon which will log you out of the app if clicked
 
-## Available Scripts
+After that there are 3 tabs: `Contacts` , `Groups`, `Notifications`.
+## Contacts
+In this view you can see all your contacts, along with the last message in the conversation with them as well as the date or time at which it was sent.
+Each contact as a down arrow in the bottom right which has the following actions in regards to the contact: block/unblock and remove.
+Selecting a contact will show the conversation with that contact.
 
-In the project directory, you can run:
+## Groups
+In this view you can see all your groups, along with the last message in the group conversation as well as the date or time at which it was sent.
+Each group has a down arrow in the bottom right which has the following actions in regards to the group: leave group and delete group(only if you have admin permission for that group).
+Selecting a group will show that group conversation.
 
-`npm start`
+## Notifications
+The following actions will create a notification:
+### - a user accepts or rejects a friendship request from you
+### - a contact blocks, unblocks or removes you
+### - a group is deleted
+### - you are removed from a group
+### - you are added to a group
+### - your permission in a group is changed
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+When a notification first appears it has a yellow background, this means that it's unread. It also appears in minimized form at first. 
+Clicking on a notification expands/contracts it and marks it as read. 
+There is a down arrow in the bottom right from which the following actions can be taken in regards to the notification: mark it as read/unread and remove it.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# Messages
+Messages can be part of a `contact chat` or a `group chat`.
