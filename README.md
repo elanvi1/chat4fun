@@ -50,6 +50,7 @@ Scrolling to the top of the conversation will retrieve addition messages (if any
 ## Group chat
 ### In the header you can see the following:
 a) The group name along with the permission for the group
+
 b) An Info Icon which shows the view that holds information about the group
   If you have admin or edit permission then you can edit the group info, if not you can just view it.
   If you have admin or add/remove permission you can add contacts to the group.
