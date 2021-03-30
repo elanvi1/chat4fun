@@ -33,3 +33,10 @@ There is a down arrow in the bottom right from which the following actions can b
 
 # Messages
 Messages can be part of a `contact chat` or a `group chat`.
+
+## Contact chat
+### In the header you can see the following:
+### a) The alias or username of the contact along with his/her presence.
+### Active will appear if the contact can see the conversation.
+### Online will appear if the contact has the app visible.
+### Offline will appear if the contact doesn't have the app visible.
